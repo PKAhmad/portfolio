@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projekte — Kamran Ahmad Darwishzada</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">&lt;<span>KAD</span>/&gt;</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav gap-1 align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html"    data-de="Start"     data-en="Home">Start</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html"    data-de="Über mich" data-en="About">Über mich</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html" data-de="Projekte"  data-en="Projects">Projekte</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html"  data-de="Kontakt"   data-en="Contact">Kontakt</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label fade-in" data-de="Was ich gebaut habe" data-en="What I built">Was ich gebaut habe</span>
+      <h1 class="section-title fade-in" data-de="Meine <span>Projekte</span>" data-en="My <span>Projects</span>">Meine <span>Projekte</span></h1>
+      <p class="fade-in" style="color:var(--muted);max-width:580px;font-size:16px;animation-delay:.1s"
+         data-de="Praktische Projekte aus echtem Bedarf — von Anfänger bis Mittelstufe, alle auf GitHub verfügbar."
+         data-en="Practical projects built from real needs — beginner to intermediate level, all available on GitHub.">
+        Praktische Projekte aus echtem Bedarf — von Anfänger bis Mittelstufe, alle auf GitHub verfügbar.
+      </p>
+    </div>
+  </div>
+
+  <section style="padding:0 0 40px">
+    <div class="container">
+      <div class="d-flex gap-2 flex-wrap fade-in" id="filterBtns">
+        <button class="skill-badge" onclick="filterProjects('all',this)" style="cursor:pointer" data-de="Alle" data-en="All">Alle</button>
+        <button class="skill-badge" onclick="filterProjects('web',this)" style="cursor:pointer">Web</button>
+        <button class="skill-badge" onclick="filterProjects('python',this)" style="cursor:pointer">Python</button>
+        <button class="skill-badge" onclick="filterProjects('networking',this)" style="cursor:pointer" data-de="Netzwerke" data-en="Networking">Netzwerke</button>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:0 0 100px">
+    <div class="container">
+      <div class="row g-4" id="projectsGrid">
+
+        <div class="col-md-6 fade-in project-card" data-cat="web">
+          <div class="card-custom" style="height:100%">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
+              <div class="card-tag">HTML · CSS · JavaScript</div>
+              <a href="https://github.com" target="_blank" style="font-family:var(--mono);font-size:11px;color:var(--muted)">GitHub ↗</a>
+            </div>
+            <h3 style="margin-bottom:10px" data-de="Bewerbungs-Tracker" data-en="Application Tracker">Bewerbungs-Tracker</h3>
+            <p style="color:var(--muted);font-size:14px;margin-bottom:12px"
+               data-de="Eine einzelne HTML-Datei zum Verwalten von Bewerbungen. Einträge hinzufügen, Status in der Tabelle ändern, Excel exportieren, Excel importieren — Daten bleiben im Browser gespeichert."
+               data-en="A single HTML file to manage applications. Add entries, change status in the table, export to Excel, import Excel — data stays saved in the browser.">
+              Eine einzelne HTML-Datei zum Verwalten von Bewerbungen. Einträge hinzufügen, Status in der Tabelle ändern, Excel exportieren, Excel importieren — Daten bleiben im Browser gespeichert.
+            </p>
+            <p style="color:var(--muted);font-size:13px;margin-bottom:12px;font-style:italic"
+               data-de="Entstanden weil ich mich bei 50+ Unternehmen in 10 Städten beworben habe."
+               data-en="Built because I applied to 50+ companies across 10 cities.">
+              Entstanden weil ich mich bei 50+ Unternehmen in 10 Städten beworben habe.
+            </p>
+            <div><span class="tech-tag">Vanilla JS</span><span class="tech-tag">localStorage</span><span class="tech-tag">Excel Export</span><span class="tech-tag">SheetJS Import</span></div>
+            <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border);font-family:var(--mono);font-size:11px;color:var(--muted)"
+                 data-de="Zeigt: DOM-Manipulation · Event-Handling · File API · Datenpersistierung"
+                 data-en="Proves: DOM manipulation · event handling · file API · data persistence">
+              Zeigt: DOM-Manipulation · Event-Handling · File API · Datenpersistierung
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 fade-in project-card" data-cat="web networking" style="animation-delay:.1s">
+          <div class="card-custom" style="height:100%">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
+              <div class="card-tag">HTML · CSS · JavaScript</div>
+              <a href="https://github.com" target="_blank" style="font-family:var(--mono);font-size:11px;color:var(--muted)">GitHub ↗</a>
+            </div>
+            <h3 style="margin-bottom:10px" data-de="IP-Subnetz-Rechner" data-en="IP Subnet Calculator">IP-Subnetz-Rechner</h3>
+            <p style="color:var(--muted);font-size:14px;margin-bottom:12px"
+               data-de="IP-Adresse und CIDR eingeben — Netzwerkadresse, Broadcast, Hostbereich, Subnetzmaske werden berechnet. Mit visuellem Balkendiagramm, Binärdarstellung und Subnetz-Prüfer."
+               data-en="Enter IP address and CIDR — get network address, broadcast, host range, subnet mask. Includes visual bar chart, binary display and subnet checker.">
+              IP-Adresse und CIDR eingeben — Netzwerkadresse, Broadcast, Hostbereich, Subnetzmaske werden berechnet. Mit visuellem Balkendiagramm, Binärdarstellung und Subnetz-Prüfer.
+            </p>
+            <div><span class="tech-tag">Bitweise Operationen</span><span class="tech-tag">Netzwerkmathematik</span><span class="tech-tag">No Libraries</span></div>
+            <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border);font-family:var(--mono);font-size:11px;color:var(--muted)"
+                 data-de="Zeigt: Subnetting-Verständnis · Binärmathematik · UI ohne Frameworks"
+                 data-en="Proves: understanding of subnetting · binary math · UI without frameworks">
+              Zeigt: Subnetting-Verständnis · Binärmathematik · UI ohne Frameworks
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 fade-in project-card" data-cat="python networking" style="animation-delay:.2s">
+          <div class="card-custom" style="height:100%">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
+              <div class="card-tag">Python</div>
+              <a href="https://github.com" target="_blank" style="font-family:var(--mono);font-size:11px;color:var(--muted)">GitHub ↗</a>
+            </div>
+            <h3 style="margin-bottom:10px" data-de="Netzwerk-Diagnose-Tool" data-en="Network Diagnostic Tool">Netzwerk-Diagnose-Tool</h3>
+            <p style="color:var(--muted);font-size:14px;margin-bottom:12px"
+               data-de="Kommandozeilen-Tool mit interaktivem Menü. Pingt mehrere Hosts parallel, scannt Ports, löst DNS auf, zeigt lokale Netzwerkinformationen und speichert einen Bericht."
+               data-en="Command-line tool with interactive menu. Pings multiple hosts in parallel, scans ports, resolves DNS, shows local network info, saves a report file.">
+              Kommandozeilen-Tool mit interaktivem Menü. Pingt mehrere Hosts parallel, scannt Ports, löst DNS auf, zeigt lokale Netzwerkinformationen und speichert einen Bericht.
+            </p>
+            <div><span class="tech-tag">Python</span><span class="tech-tag">socket</span><span class="tech-tag">subprocess</span><span class="tech-tag">ThreadPoolExecutor</span></div>
+            <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border);font-family:var(--mono);font-size:11px;color:var(--muted)"
+                 data-de="Zeigt: Python · Netzwerkkenntnisse · Parallele Ausführung · CLI-Design"
+                 data-en="Proves: Python · networking knowledge · parallel execution · CLI design">
+              Zeigt: Python · Netzwerkkenntnisse · Parallele Ausführung · CLI-Design
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 fade-in project-card" data-cat="web" style="animation-delay:.3s">
+          <div class="card-custom" style="height:100%">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
+              <div class="card-tag">HTML · CSS · JavaScript</div>
+              <a href="https://github.com" target="_blank" style="font-family:var(--mono);font-size:11px;color:var(--muted)">GitHub ↗</a>
+            </div>
+            <h3 style="margin-bottom:10px" data-de="Caesar &amp; Vigenère Verschlüsselung" data-en="Caesar &amp; Vigenère Cipher">Caesar &amp; Vigenère Verschlüsselung</h3>
+            <p style="color:var(--muted);font-size:14px;margin-bottom:12px"
+               data-de="Verschlüsselt und entschlüsselt Text mit Caesar- und Vigenère-Methode. Mit Brute-Force-Tab der alle 25 Caesar-Varianten testet und deutschen Text erkennt, plus Häufigkeitsanalyse."
+               data-en="Encrypts and decrypts text using Caesar and Vigenère. Includes brute-force tab that tries all 25 shifts and detects German text, plus letter frequency analysis.">
+              Verschlüsselt und entschlüsselt Text mit Caesar- und Vigenère-Methode. Mit Brute-Force-Tab der alle 25 Caesar-Varianten testet und deutschen Text erkennt, plus Häufigkeitsanalyse.
+            </p>
+            <div><span class="tech-tag">Kryptographie</span><span class="tech-tag">Brute-Force</span><span class="tech-tag">Häufigkeitsanalyse</span></div>
+            <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border);font-family:var(--mono);font-size:11px;color:var(--muted)"
+                 data-de="Zeigt: Algorithmen · String-Manipulation · Tab-UI · C# zu JS"
+                 data-en="Proves: algorithms · string manipulation · tab UI · C# to JS migration">
+              Zeigt: Algorithmen · String-Manipulation · Tab-UI · C# zu JS
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 fade-in project-card" data-cat="web" style="animation-delay:.1s">
+          <div class="card-custom" style="height:100%">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
+              <div class="card-tag">HTML · CSS · JavaScript</div>
+              <a href="https://github.com" target="_blank" style="font-family:var(--mono);font-size:11px;color:var(--muted)">GitHub ↗</a>
+            </div>
+            <h3 style="margin-bottom:10px" data-de="Azubi Lernkarten" data-en="Azubi Flashcard App">Azubi Lernkarten</h3>
+            <p style="color:var(--muted);font-size:14px;margin-bottom:12px"
+               data-de="Interaktive Lernkarten-App mit 50+ Karten zu IT-Ausbildungsthemen: OSI-Modell, Netzwerke, C# OOP, SQL, IT-Sicherheit. Nach Kategorie filtern, als gelernt markieren, Tastatursteuerung."
+               data-en="Interactive flashcard app with 50+ cards covering IT Ausbildung topics: OSI model, networking, C# OOP, SQL, IT security. Filter by category, mark learned, keyboard shortcuts.">
+              Interaktive Lernkarten-App mit 50+ Karten zu IT-Ausbildungsthemen: OSI-Modell, Netzwerke, C# OOP, SQL, IT-Sicherheit. Nach Kategorie filtern, als gelernt markieren, Tastatursteuerung.
+            </p>
+            <div><span class="tech-tag">Vanilla JS</span><span class="tech-tag">CSS Flip-Animation</span><span class="tech-tag">IHK-Inhalte</span></div>
+            <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border);font-family:var(--mono);font-size:11px;color:var(--muted)"
+                 data-de="Zeigt: JS-Zustandsverwaltung · CSS-Animationen · Keyboard-Events"
+                 data-en="Proves: JS state management · CSS animations · keyboard events">
+              Zeigt: JS-Zustandsverwaltung · CSS-Animationen · Keyboard-Events
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 fade-in project-card" data-cat="python" style="animation-delay:.2s">
+          <div class="card-custom" style="height:100%">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
+              <div class="card-tag" data-de="Python · Web Scraping · KI" data-en="Python · Web Scraping · AI">Python · Web Scraping · KI</div>
+              <a href="https://github.com" target="_blank" style="font-family:var(--mono);font-size:11px;color:var(--muted)">GitHub ↗</a>
+            </div>
+            <h3 style="margin-bottom:10px" data-de="Automatischer Anschreiben-Generator" data-en="Automated Cover Letter Generator">Automatischer Anschreiben-Generator</h3>
+            <p style="color:var(--muted);font-size:14px;margin-bottom:12px"
+               data-de="Liest Stellenanzeigen-URLs aus Excel, lädt jede Seite, nutzt eine kostenlose KI-API um Firmendaten zu extrahieren und einen individuellen Satz zu schreiben, generiert dann ein fertiges .docx Anschreiben."
+               data-en="Reads job listing URLs from Excel, scrapes each page, uses a free AI API to extract company data and write a personalised sentence, then generates a finished .docx cover letter.">
+              Liest Stellenanzeigen-URLs aus Excel, lädt jede Seite, nutzt eine kostenlose KI-API um Firmendaten zu extrahieren und einen individuellen Satz zu schreiben, generiert dann ein fertiges .docx Anschreiben.
+            </p>
+            <div><span class="tech-tag">Python</span><span class="tech-tag">BeautifulSoup</span><span class="tech-tag">openpyxl</span><span class="tech-tag">Groq API</span></div>
+            <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border);font-family:var(--mono);font-size:11px;color:var(--muted)"
+                 data-de="Zeigt: Web-Scraping · API-Integration · Dateiautomatisierung · echte Problemlösung"
+                 data-en="Proves: web scraping · API integration · file automation · real-world problem solving">
+              Zeigt: Web-Scraping · API-Integration · Dateiautomatisierung · echte Problemlösung
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p><span data-de="Erstellt von" data-en="Built by">Erstellt von</span> <a href="#">Kamran Ahmad Darwishzada</a> — HTML · CSS · JavaScript · Bootstrap</p>
+    <p style="margin-top:6px">Göttingen, Deutschland · <a href="mailto:p.k.ahmadllc@gmail.com">p.k.ahmadllc@gmail.com</a></p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+<script>
+  function filterProjects(cat, btn) {
+    document.querySelectorAll('#filterBtns button').forEach(function(b) { b.style.borderColor=''; b.style.color=''; });
+    btn.style.borderColor='var(--accent2)'; btn.style.color='var(--accent2)';
+    document.querySelectorAll('.project-card').forEach(function(card) {
+      card.style.display = (cat==='all' || card.getAttribute('data-cat').includes(cat)) ? '' : 'none';
+    });
+  }
+  document.querySelector('#filterBtns button').style.borderColor='var(--accent2)';
+  document.querySelector('#filterBtns button').style.color='var(--accent2)';
+</script>
+</body>
+</html>
